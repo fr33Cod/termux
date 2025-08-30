@@ -1,0 +1,41 @@
+#COMANDOS NANO
+
+💾 Guardar y salir
+Ctrl + O  → Guardar archivo
+Ctrl + X  → Salir
+Ctrl + C  → Mostrar posición
+Ctrl + X y N → Salir sin guardar
+
+
+📋 Navegación
+Ctrl + A  → Inicio de línea
+Ctrl + E  → Fin de línea
+Ctrl + Y  → Página arriba
+Ctrl + V  → Página abajo
+Ctrl + _  → Ir a número de línea
+
+
+✂️ Edición
+Ctrl + K  → Cortar línea/bloque
+Ctrl + U  → Pegar
+Ctrl + 6  → Marcar inicio de selección
+Alt + 6   → Copiar línea/bloque
+Ctrl + J  → Justificar párrafo
+
+
+🔍 Buscar / Reemplazar
+Ctrl + W  → Buscar texto
+Ctrl + \  → Reemplazar texto
+Alt + W   → Repetir última búsqueda
+
+
+🧹 Trucos para limpiar
+
+Borrar todo línea por línea
+Ctrl + K repetidas 
+
+Borrar todo 
+Ctrl + Y
+Ctrl + 6
+Ctrl + V
+Ctrl + K
