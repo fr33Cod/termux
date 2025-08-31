@@ -1,41 +1,35 @@
-#COMANDOS NANO
+# NANO COMMANDS
 
-💾 Guardar y salir
-Ctrl + O  → Guardar archivo
-Ctrl + X  → Salir
-Ctrl + C  → Mostrar posición
-Ctrl + X y N → Salir sin guardar
+💾 Save & Exit
+Ctrl + O      → Save file
+Ctrl + X      → Exit
+Ctrl + C      → Show cursor position
+Ctrl + X + N  → Exit without saving
 
+📋 Navigation
+Ctrl + A      → Beginning of line
+Ctrl + E      → End of line
+Ctrl + Y      → Page up
+Ctrl + V      → Page down
+Ctrl + _      → Go to line number
 
-📋 Navegación
-Ctrl + A  → Inicio de línea
-Ctrl + E  → Fin de línea
-Ctrl + Y  → Página arriba
-Ctrl + V  → Página abajo
-Ctrl + _  → Ir a número de línea
+✂️ Editing
+Ctrl + K      → Cut line/block
+Ctrl + U      → Paste
+Ctrl + 6      → Set mark (start selection)
+Alt + 6       → Copy line/block
+Alt + U       → Undo last action
+Alt + E       → Redo undone action
 
+🔍 Search / Replace
+Ctrl + W      → Search text
+Ctrl + \      → Replace text
+Alt + W       → Repeat last search
 
-✂️ Edición
-Ctrl + K  → Cortar línea/bloque
-Ctrl + U  → Pegar
-Ctrl + 6  → Marcar inicio de selección
-Alt + 6   → Copiar línea/bloque
-Alt + U → Deshacer,la última acción
-Alt + E → Rehacer,una acción que hayas deshecho
+🧹 Cleaning tricks
+Ctrl + K (repeated)
 
-
-🔍 Buscar / Reemplazar
-Ctrl + W  → Buscar texto
-Ctrl + \  → Reemplazar texto
-Alt + W   → Repetir última búsqueda
-
-
-🧹 Trucos para limpiar
-
-Borrar todo línea por línea
-Ctrl + K repetidas 
-
-Borrar todo 
+Delete entire file:
 Ctrl + Y
 Ctrl + 6
 Ctrl + V

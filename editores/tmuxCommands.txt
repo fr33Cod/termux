@@ -1,0 +1,17 @@
+#tmux commands
+
+tmux
+
+
+#Prefix: Ctrl+b
+
+Ctrl+b c   → Create new window
+Ctrl+b n   → Go to next window
+Ctrl+b p   → Go to previous window
+Ctrl+b w   → List windows
+Ctrl+b ,   → Rename window
+Ctrl+b %   → Split pane vertically
+Ctrl+b "   → Split pane horizontally
+Ctrl+b o   → Switch to next pane
+Ctrl+b x   → Close pane
+Ctrl+b &   → Close window

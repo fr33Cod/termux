@@ -1,42 +1,42 @@
-#Vim - Guía completa de comandos
+# VIM - Complete Command Guide
 
-#Guardar y salir
-:w      Guardar archivo
-:q      Salir
-:wq     Guardar y salir
-:q!     Salir sin guardar
+# Save & Exit
+:w      → Save file
+:q      → Quit
+:wq     → Save and quit
+:q!     → Quit without saving
 
-#Navegación (modo normal)
-0       Ir al inicio de la línea
-$       Ir al final de la línea
-:n      Ir a la línea número n (ej: :10)
-gg      Ir al inicio del archivo
-G       Ir al final del archivo
+# Navigation (normal mode)
+0       → Go to beginning of line
+$       → Go to end of line
+:n      → Go to line n (e.g. :10)
+gg      → Go to beginning of file
+G       → Go to end of file
 
-#Edición básica
-i       Entrar en modo insertar
-a       Insertar después del cursor
-o       Abrir nueva línea debajo
+# Basic Editing
+i       → Insert before cursor
+a       → Insert after cursor
+o       → Open new line below
 
-#Copiar / Cortar / Pegar
-yy      Copiar línea completa
-Nyy     Copiar N líneas
-y$      Copiar hasta el final de la línea
-yG      Copiar de actual hasta el final
-y       Copiar selección
-dd      Cortar línea completa
-p       Pegar después del cursor
-P       Pegar antes del cursor
+# Copy / Cut / Paste
+yy      → Copy current line
+Nyy     → Copy N lines
+y$      → Copy until end of line
+yG      → Copy until end of file
+y       → Copy selection
+dd      → Cut current line
+p       → Paste after cursor
+P       → Paste before cursor
 
-#Reemplazar
-/txt    Buscar texto hacia adelante
-?txt    Buscar texto hacia atrás
-n       Repetir búsqueda en la misma dirección
-N       Repetir búsqueda en dirección opuesta
+# Search & Replace
+/txt    → Search forward for "txt"
+?txt    → Search backward for "txt"
+n       → Repeat search forward
+N       → Repeat search backward
 
-#Deshacer / Rehacer
-u         Deshacer último cambio
-Ctrl+r    Rehacer cambio deshecho
+# Undo / Redo
+u         → Undo last change
+Ctrl+r    → Redo undone change
 
-#Trucos útiles
-.         Repetir último comando
+# Useful Tricks
+.         → Repeat last command
