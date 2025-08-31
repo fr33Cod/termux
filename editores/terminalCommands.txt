@@ -1,0 +1,16 @@
+# ─── Navigation ───
+
+pwd               #print working directory
+ls                # list files and folders
+ls -a             # list all files
+ls -la            # list all files with details
+cd <path>         # change directory
+cd ..             # go up one directory level
+
+# ─── Files and Folders ───
+
+touch <file>      # create an empty file
+mkdir <folder>    # create a folder
+rm <file>         # remove a file
+rm -r <folder>    # remove a folder
+mv <source> <dest># move or rename file/folder
