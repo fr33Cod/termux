@@ -20,7 +20,8 @@ Ctrl + K  → Cortar línea/bloque
 Ctrl + U  → Pegar
 Ctrl + 6  → Marcar inicio de selección
 Alt + 6   → Copiar línea/bloque
-Ctrl + J  → Justificar párrafo
+Alt + U → Deshacer,la última acción
+Alt + E → Rehacer,una acción que hayas deshecho
 
 
 🔍 Buscar / Reemplazar
