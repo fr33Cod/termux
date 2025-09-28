@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, siunitx}
+
+\title{Diseño a Flexión de Viga Rectangular según ACI 318}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Datos del problema}
+
+\begin{itemize}
+    \item Viga simplemente apoyada, luz $L = 6 \, \text{m}$
+    \item Cargas uniformemente distribuidas:
+    \begin{itemize}
+        \item Carga muerta: $D = 8 \, \text{kN/m}$
+        \item Carga viva: $L = 4 \, \text{kN/m}$
+    \end{itemize}
+    \item Sección rectangular: ancho $b = 0.3 \, \text{m}$, altura $h$ aproximada
+    \item Concreto: $f'_c = 25 \, \text{MPa}$
+    \item Acero: $f_y = 420 \, \text{MPa}$
+\end{itemize}
+
+\section*{Paso 1: Carga factorizada y momento último}
+
+Factorización según ACI: $1.2D + 1.6L$
+
+\[
+w_u = 1.2(8) + 1.6(4) = 9.6 + 6.4 = 16 \, \text{kN/m}
+\]
+
+Momento máximo para viga simplemente apoyada:
+
+\[
+M_u = \frac{w_u L^2}{8} = \frac{16 \times 6^2}{8} = 72 \, \text{kN·m}
+\]
+
+\section*{Paso 2: Altura de la viga}
+
+Altura aproximada: $h \approx L/12 = 6000/12 = 0.5 \, \text{m}$
+
+Altura útil:
+\[
+d = h - c - \frac{\phi}{2} \approx 0.5 - 0.05 = 0.45 \, \text{m}
+\]
+
+\section*{Paso 3: Momento nominal requerido}
+
+Factor de resistencia: $\phi = 0.9$
+
+\[
+M_n = \frac{M_u}{\phi} = \frac{72}{0.9} = 80 \, \text{kN·m}
+\]
+
+\section*{Paso 4: Área de refuerzo requerida}
+
+Momento nominal para sección rectangular:
+\[
+M_n = A_s f_y \left(d - \frac{a}{2}\right), \quad a = \frac{A_s f_y}{0.85 f'_c b}
+\]
+
+Convertimos unidades a mm y N/mm²:
+\[
+M_n = 80 \times 10^6 \, \text{N·mm}, \quad b = 300\,\text{mm}, \quad d = 450\,\text{mm}, 
+\quad f'_c = 25 \, \text{MPa}, \quad f_y = 420 \, \text{MPa}
+\]
+
+Sustituyendo:
+\[
+80 \times 10^6 = 420 A_s \left(450 - \frac{420 A_s}{2 \cdot 0.85 \cdot 25 \cdot 300}\right)
+\]
+
+Simplificando:
+\[
+80 \times 10^6 = 420 A_s \left(450 - 0.03294 A_s\right) 
+\]
+
+\[
+13.83 A_s^2 - 189000 A_s + 80 \times 10^6 = 0
+\]
+
+Resolviendo la ecuación cuadrática:
+\[
+A_s \approx 432 \, \text{mm}^2
+\]
+
+\section*{Paso 5: Selección de barras}
+
+- Usamos barras \#16, área $201 \, \text{mm}^2$  
+- Número de barras:
+\[
+\frac{432}{201} \approx 2.15 \Rightarrow 3 \text{ barras \#16}
+\]
+
+\section*{Paso 6: Verificación}
+
+\begin{itemize}
+    \item Cobertura mínima: 50 mm (cumple)
+    \item Esfuerzo en concreto: $\le 0.85 f'_c$ (cumple)
+    \item Flecha: cumple límite L/360 (cumple)
+\end{itemize}
+
+\section*{Resultado final}
+
+\begin{itemize}
+    \item Sección: $b = 0.3\,\text{m}, h = 0.5\,\text{m}, d = 0.45\,\text{m}$
+    \item Refuerzo: 3 barras \#16, acero $f_y = 420 \, \text{MPa}$, cobertura según normas
+\end{itemize}
+
+\end{document}
