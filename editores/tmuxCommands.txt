@@ -15,3 +15,16 @@ Ctrl+b "   → Split pane horizontally
 Ctrl+b o   → Switch to next pane
 Ctrl+b x   → Close pane
 Ctrl+b &   → Close window
+
+
+#crear un file .tmux.conf
+
+set -g status on
+set -g status-left ""
+set -g status-left-length 0
+set -g status-right-length 20
+set -g status-style bg=black,fg=green
+set -g status-right "%H:%M"
+
+setw -g window-status-format " "
+setw -g window-status-current-format " "
